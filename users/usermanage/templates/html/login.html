@@ -1,0 +1,23 @@
+{% load rest_framework %}
+{% load static %}
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body>
+<div class="container">
+    <section id="content">
+        <form action="{% url 'user-dashboard'%}" method="POST">
+            <h1>Login Form</h1>
+            <div>
+                {% csrf_token %}
+                {{ form }}
+                <input type="submit" value="Log in"/>
+            </div>
+        </form>
+    </section>
+</div>
+</body>
+</html>

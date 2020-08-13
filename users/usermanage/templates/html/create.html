@@ -1,0 +1,27 @@
+{% load rest_framework %}
+{% load static %}l
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+<h1>Create User</h1>
+<hr></hr>
+<body>
+<div class="container">
+    <section id="content">
+<form action="{% url 'user-create'%}" method="POST">
+
+    <div>
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Create"/>
+    </div>
+</form>
+    </section>
+</div>
+</body>
+</html>

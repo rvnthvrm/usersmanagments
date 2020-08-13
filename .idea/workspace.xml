@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4292b396-585f-4bed-813e-467b503f511e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JupyterTrust" id="0e8aac14-b068-4008-9bbe-a99663ece9f4" />
+  <component name="ProjectId" id="1g02hRHNcvSEaW9BuhZSZmjIdZz" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Desktop\usersmanagement\usersmanagments\users\usermanage" />
+      <recent name="C:\Users\HP\Desktop\usersmanagement\usersmanagments\usmgt" />
+      <recent name="C:\Users\HP\Desktop\usersmanagement\usersmanagments" />
+      <recent name="C:\Users\HP\Desktop\usersmanagement\usersmanagments\usrmgmt" />
+      <recent name="C:\Users\HP\Desktop\usersmanagement\usersmanagments\usrmgmt\usrmgmt" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4292b396-585f-4bed-813e-467b503f511e" name="Default Changelist" comment="" />
+      <created>1597237307520</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597237307520</updated>
+      <workItem from="1597237309667" duration="19750000" />
+      <workItem from="1597263874908" duration="28642000" />
+      <workItem from="1597306414966" duration="9294000" />
+      <workItem from="1597316555171" duration="1312000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="507" y="163" width="585" height="534" key="find.popup" timestamp="1597314495079">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="507" y="163" width="585" height="534" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1597314495079" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1597308773813">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1597308773813" />
+  </component>
+</project>

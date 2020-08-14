@@ -1,12 +1,15 @@
 FROM nginx:1.16-alpine
 ADD . /code
-WORKDIR /code
+WORKDIR /code/users
 RUN apk update
+
 RUN apk add --no-cache --virtual .build-deps g++ python3-dev libffi-dev openssl-dev && \
     pip3 install --upgrade pip setuptools && \
-    pip3 install -r requirements.txt && \
+    pip3 install uWSGI && \
     apk del .build-deps
-RUN apk add --no-cache --update python3
 
-EXPOSE 8001
-CMD python manage.py runserver
+ENTRYPOINT /code/. entrypoint.sh
+RUN apk add --no-cache --update python3
+RUN python3 manage.py runserver
+
+EXPOSE 8000

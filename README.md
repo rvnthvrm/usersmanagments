@@ -22,4 +22,5 @@ Superuser created successfully.
 ## or
 
 docker-compose up web 
+Note: In Windows use Absolute path for Mounting the code
 

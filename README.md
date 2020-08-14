@@ -18,3 +18,8 @@ Superuser created successfully.
 
 ```
 - python manage.py runserver 
+
+## or
+
+docker-compose up web 
+

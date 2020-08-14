@@ -1,5 +1,4 @@
 from django import forms
-from django.conf import settings
 from django.contrib.auth import login, logout
 from django.core.exceptions import ValidationError
 from django.forms import ModelForm
@@ -45,14 +44,19 @@ class UserDashboardView(views.APIView):
     permission_classes = (permissions.AllowAny,)
     authentication_classes = (CsrfExemptSessionAuthentication,)
     renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
-    template_name = 'html/info.html'
+    template_name = 'html/dashboard.html'
 
     def post(self, request):
         serializer = LoginSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
         user = serializer.validated_data['user']
         login(request, user)
-        queryset = User.objects.all()
+
+        if request.user.is_superuser:
+            queryset = User.objects.all()
+        else:
+            queryset = User.objects.filter(**{'is_superuser': request.user.is_superuser}).all()
+
         return response.Response({'users': [UserSerializer(user).data for user in queryset]})
 
 
@@ -110,7 +114,7 @@ class UserView(generics.CreateAPIView):
 
 class ListUsersView(generics.RetrieveAPIView):
     renderer_classes = [TemplateHTMLRenderer, JSONRenderer]
-    template_name = 'html/info.html'
+    template_name = 'html/login.html'
     permission_classes = [permissions.AllowAny]
 
     def get(self, request, format=None):

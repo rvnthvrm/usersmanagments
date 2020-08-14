@@ -14,7 +14,6 @@
 <div class="container">
     <section id="content">
 <form action="{% url 'user-create'%}" method="POST">
-
     <div>
         {% csrf_token %}
         {{ form }}

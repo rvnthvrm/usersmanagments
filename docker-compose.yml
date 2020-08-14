@@ -1,0 +1,10 @@
+version: '2'
+services:
+    web:
+        build:
+           context: /Users/HP/Desktop/usersmanagement/final/usersmanagments/users
+           dockerfile: /Users/HP/Desktop/usersmanagement/final/usersmanagments/Dockerfile
+        ports:
+            - "8000:8000"
+        volumes:
+            - .:/code
